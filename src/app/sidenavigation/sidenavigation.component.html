@@ -1,0 +1,20 @@
+<ul>
+    <li (click)="onCloseButtonClick()">
+        <span class="glyphicon glyphicon-remove-circle"></span>
+    </li>
+    <li *ngFor="let item of menuItems" class="nav-item divider" (click)="toggleSubMenu(item)">
+        <img [src]="getlogo(item.icon)" alt="" height="20" width="20">
+        <a href="#">
+            <b class="lead"> {{item.name}} </b>
+            <span class="caret"></span>
+        </a>
+        <ul *ngIf="item.sub && item.sub.length > 0 && parentMenuID != -1 && item.id == parentMenuID" [hidden]="item.state">
+            <li *ngFor="let childItem of item.sub" class="sublimenu divider" (click)="selectMenuItem(childItem)">
+                <img [src]="getlogo(childItem)" alt="" height="20" width="20">
+                <a href="#">
+                    <b> {{childItem.name}}</b>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>

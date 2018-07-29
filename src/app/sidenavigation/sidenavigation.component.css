@@ -1,0 +1,52 @@
+:host {
+    background : rgb(232, 235, 238, 0.9);
+    color:blue;
+    position: fixed;
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    font-size: 20px;
+    min-width: 250px;
+    z-index: 9999;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border: 2px gray   groove;
+  }
+   
+   ul {
+    font-size: 18px;
+    line-height: 3;
+    color: green;
+    font-weight: 400;
+    padding-top: 10px;
+    list-style: none;    
+  }
+
+  li 
+  {
+    font-size: 18px;
+    color: white;
+    line-height: 3;
+    font-weight: 300;
+    padding-top: 2px;
+    list-style: none; 
+    
+
+  } 
+
+  
+  a:hover{
+    color: white;
+    font-weight: 400;
+  }
+  
+  
+  a
+  {
+    font-size: 14px;
+    font-weight: 300;
+    color: blue;
+    padding-top: 2px;
+    text-decoration: none;
+  }
